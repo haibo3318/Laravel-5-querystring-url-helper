@@ -9,7 +9,9 @@ www.example.com/search/product/date/1
 what we want:
 www.example.com/search?by=product&page=1&sortby=date 
 
-because we don't care about the order of these searching parameters and may add some searching parameter in any order later.
+Or www.example.com/search?by=product&sortby=date&page=1
+
+They should direct to the same page because we don't care about the order of these searching parameters and may add some searching parameter in any order later(which default Laravel router can not do).
 
 1.Create a file app/Helpers/helper.php
 
